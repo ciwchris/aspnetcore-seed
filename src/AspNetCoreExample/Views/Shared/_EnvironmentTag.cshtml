@@ -1,0 +1,21 @@
+﻿@using Microsoft.Extensions.PlatformAbstractions
+
+@inject IApplicationEnvironment appEnv
+
+<!-- Displays the Environment in a tag-fashion across the top of the screen. -->
+@if ((new[] {"live", "staging"}).All(e => e != @appEnv.GetData("Environment").ToString().ToLower()))
+{
+    <div class="environmentTag tagRight @appEnv.GetData("Environment")">
+        @appEnv.GetData("Environment")
+    </div>
+    <div class="footer">
+        <div id="app-version">
+
+            @*
+                *** To Show the Version Number ***
+            *@
+            @appEnv.ApplicationVersion
+
+        </div>
+    </div>
+}

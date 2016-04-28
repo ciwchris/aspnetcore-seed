@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "angular"
+    ],
+    "globals": {
+        "module": false,
+        "require": false
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "semi": 2,
+        "angular/module-getter": 0
+    }
+}

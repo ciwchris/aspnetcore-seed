@@ -1,0 +1,24 @@
+﻿#app-version                        {float: right;}
+.environmentTag.tagRight.Test       {background: #6699CC;}
+.environmentTag.tagRight.Dev        {background: #980000;}
+.environmentTag.tagRight.Demo       {background: #99CC33;}
+.environmentTag.tagRight.Training   {background: #99CC33;}
+.environmentTag.tagRight            {left: 75%; top: 0%; -webkit-transform-origin: top left;}
+.environmentTag                     {
+    position: fixed;
+    background: #006B54;
+    padding: 5px;
+    border: 2px solid white;
+    border-top: none;
+    font-weight: bold;
+    color: white !important;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none !important;
+    font-family: arial, FreeSans, Helvetica, sans-serif;
+    font-size: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 5px 5px;
+    z-index: 999;
+}
